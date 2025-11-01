@@ -9,8 +9,8 @@ const Home = () => {
   const [showToast, setShowToast] = useState(false)
 
   const handleFileChange = (e) => {
-    if (e.target.files.length > 4) {
-      setError("Solo podés seleccionar hasta 4 archivos")
+    if (e.target.files.length > 5) {
+      setError("Solo podés seleccionar hasta 5 archivos")
       e.target.value = ""
     } else {
       setError("")

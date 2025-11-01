@@ -18,8 +18,8 @@ os.makedirs("uploads", exist_ok=True)
 
 @app.post("/upload")
 async def upload_files(archivos: List[UploadFile] = File(...)):
-    if len(archivos) > 4:
-        raise HTTPException(status_code=400, detail="Solo se permiten hasta 4 archivos")
+    if len(archivos) > 5:
+        raise HTTPException(status_code=400, detail="Solo podés seleccionar hasta 5 archivos")
 
     tipos_detectados = []
 
