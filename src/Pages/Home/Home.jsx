@@ -60,7 +60,7 @@ const Home = () => {
   return (
     <main>
       <h1>Subir documentos</h1>
-      <span>Cargá hasta 4 archivos del mismo formato</span>
+      <span>Cargá hasta 5 archivos del mismo formato</span>
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         <input 
           type="file" 
